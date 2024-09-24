@@ -1,1 +1,75 @@
-<p>sidebar works!</p>
+<nz-layout>
+  <nz-sider [nzCollapsible]="true" [(nzCollapsed)]="isCollapsed" nzWidth="280px">
+    <div class="logo">
+      <span nz-icon nzType="menu" nzTheme="outline"></span>
+      <span *ngIf="!isCollapsed">Nos Categories</span> <!-- Affiche le texte uniquement si le sider n'est pas réduit -->
+    </div>
+      <ul nz-menu nzTheme="dark" nzMode="inline">
+        <li nz-menu-item>
+          <span nz-icon nzType="skin" ></span>
+          <span>Textile</span>
+        </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="gift" ></span>
+        <span>Gifts & K'DO</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="desktop"></span>
+        <span>Support Promotionnel</span>
+      </li>
+      <li nz-submenu nzTitle="Objets Publicitaires" nzIcon="user">
+        <ul>
+          <li nz-menu-item>
+            <span nz-icon nzType="edit"></span>
+            Écriture & Bureau
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="gift"></span>
+            Goodies
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="laptop"></span>
+            High Tech
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="home"></span>
+            Maison & Deco
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="paw"></span>
+            Pets Print
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="child"></span>
+            Kids Print
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="calendar"></span>
+            Événementiel
+          </li>
+        </ul>
+      </li>
+
+      <li nz-submenu nzTitle="Impression" nzIcon="container">
+        <ul>
+          <li nz-menu-item>
+            <span nz-icon nzType="camera"></span>
+            Impression Photo
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="appstore"></span>
+            Impression Grand Format
+          </li>
+          <li nz-menu-item>
+            <span nz-icon nzType="file-text"></span>
+            Impression Petit Format
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+  </nz-sider>
+  <nz-layout>
+
+  </nz-layout>
+</nz-layout>

@@ -1,0 +1,43 @@
+.logo {
+  display: flex;                  /* Aligne les éléments horizontalement */
+  align-items: center;           /* Centre verticalement les éléments */
+  padding: 16px;                 /* Espace autour de l'élément */
+  color: white;                  /* Couleur du texte (peut être ajustée) */
+  font-size: 16px;               /* Taille de la police (peut être ajustée) */
+  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond si nécessaire */
+  border-radius: 4px;           /* Coins arrondis si souhaité */
+  transition: background-color 0.3s; /* Animation pour l'effet au survol */
+}
+
+.logo:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Changement de couleur au survol */
+}
+
+.logo span {
+  margin-left: 8px;              /* Espace entre l'icône et le texte */
+}
+
+
+nz-header {
+  background: #fff;
+  padding: 0;
+}
+
+nz-content {
+  margin: 0 16px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
