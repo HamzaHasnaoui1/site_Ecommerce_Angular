@@ -1,8 +1,24 @@
 /* Styles de la barre de navigation */
 .navbar {
-  background-color: #f8f9fa; /* Couleur de fond */
+  background-color: #050505; /* Couleur de fond */
   padding: 15px 20px; /* Espacement interne */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour profondeur */
+  box-shadow: 0 2px 5px rgb(255, 0, 8); /* Ombre pour profondeur */
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover {
+  color: #ff0008 !important;
+}
+
+.navbar-brand {
+  color: #ff0008 !important;
+}
+
+.navbar-brand:hover {
+  color: #ffffff !important;
 }
 
 /* Formulaire de recherche */
@@ -14,17 +30,32 @@
   align-items: center; /* Aligne les éléments verticalement */
 }
 
+.search-container {
+  position: relative;
+}
+
 /* Styles pour l'input de recherche */
 .form-control {
   margin-right: 0; /* Enlève la marge à droite de l'input */
   border: 1px solid #ced4da; /* Bordure de l'input */
   border-radius: 0.25rem; /* Arrondi des coins */
+  padding-right: 40px; /* Laisse de l'espace pour l'icône */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #ff0008;
+  cursor: pointer;
 }
 
 /* Styles pour le bouton */
 .btn {
   margin-left: 0; /* Enlève la marge à gauche du bouton */
-  background-color: #007bff; /* Couleur de fond du bouton */
+  background-color: #ff0008; /* Couleur de fond du bouton */
   color: white; /* Couleur du texte */
   border: none; /* Pas de bordure */
   border-radius: 0.25rem; /* Arrondi des coins */
@@ -54,3 +85,4 @@
 .dropdown-item:hover {
   background-color: #f8f9fa; /* Couleur de fond au survol */
 }
+
