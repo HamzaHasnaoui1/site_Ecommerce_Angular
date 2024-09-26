@@ -1,28 +1,119 @@
+/* Styliser le logo */
 .logo {
-  display: flex;                  /* Aligne les éléments horizontalement */
-  align-items: center;           /* Centre verticalement les éléments */
-  padding: 16px;                 /* Espace autour de l'élément */
-  color: white;                  /* Couleur du texte (peut être ajustée) */
-  font-size: 16px;               /* Taille de la police (peut être ajustée) */
-  background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond si nécessaire */
-  border-radius: 4px;           /* Coins arrondis si souhaité */
-  transition: background-color 0.3s; /* Animation pour l'effet au survol */
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .logo:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Changement de couleur au survol */
+  background-color: rgb(255, 0, 8);
 }
 
 .logo span {
-  margin-left: 8px;              /* Espace entre l'icône et le texte */
+  margin-left: 8px;
+}
+
+.ant-layout-sider {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Style du Sider (barre latérale) */
+.ant-layout-sider {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgb(255, 0, 8); /* Ombre pour profondeur */
+
+}
+
+/* Couleur des icônes au survol */
+ul[nz-menu] li:hover span[nz-icon] {
+  color: #ffffff; /* Icônes blanches au survol */
+}
+
+/* Style pour les éléments du menu */
+ul[nz-menu] {
+  background: #ffffff;
+}
+
+ul[nz-menu] li {
+  color: #050505;
+}
+
+/* Changer la couleur du texte et de l'icône au survol */
+ul[nz-menu] li:hover {
+  color: #ffffff; /* Couleur du texte au survol */
+}
+
+ul[nz-menu] li:hover {
+  background-color: #ff0008; /* Survol des éléments du menu */
+}
+
+/* Style pour les icônes dans les éléments du menu */
+ul[nz-menu] span[nz-icon] {
+  font-size: 16px;
+  color: #050505; /* Couleur des icônes dans le menu */
+}
+
+/* Style pour les sous-menus */
+ul[nz-menu] li[nz-submenu] {
+  color: #050505; /* Couleur du texte des sous-menus */
+}
+
+ul[nz-menu] li[nz-submenu] .ant-menu-submenu-title span[nz-icon] {
+  color: #ff0008; /* Couleur des icônes des sous-menus */
+  font-size: 16px; /* Taille des icônes des sous-menus */
+}
+
+/* Icônes des sous-menus au survol */
+ul[nz-menu] li[nz-submenu]:hover .ant-menu-submenu-title span[nz-icon] {
+  color: #ffffff; /* Change la couleur des icônes au survol dans les sous-menus */
 }
 
 
-nz-header {
-  background: #fff;
-  padding: 0;
+
+/* Style des éléments dans le sous-menu */
+ul[nz-menu] li[nz-submenu] ul li {
+  padding-left: 20px; /* Indentation des sous-éléments */
+  color: #ffffff; /* Couleur par défaut des sous-éléments */
+  background-color: red;
+  margin: 0; /* Supprime toute marge entre les éléments */
+  border: none; /* Supprime les bordures s'il y en a */
 }
 
+/* Supprimer les bordures ou séparateurs entre les éléments du sous-menu */
+ul[nz-menu] li[nz-submenu] ul li::after {
+  display: none; /* Supprime les séparateurs qui pourraient apparaître entre les éléments */
+}
+
+/* S'assurer qu'il n'y a pas de padding global sur les sous-menus */
+ul[nz-menu] li[nz-submenu] ul {
+  padding: 0; /* Supprime tout padding du conteneur des sous-éléments */
+  background-color: red; /* Uniformiser le fond du conteneur des sous-éléments */
+}
+
+/* Style des icônes dans les éléments du sous-menu */
+ul[nz-menu] li[nz-submenu] ul li span[nz-icon] {
+  color: #ffffff; /* Couleur des icônes à l'intérieur des sous-menus */
+  margin-right: 8px; /* Ajoute un espace entre l'icône et le texte */
+
+}
+
+/* Changer la couleur des icônes et du texte au survol dans le sous-menu */
+ul[nz-menu] li[nz-submenu] ul li:hover {
+  color: #ffffff; /* Couleur du texte au survol */
+  background-color: #ff0008; /* Fond rouge au survol */
+}
+
+ul[nz-menu] li[nz-submenu] ul li:hover span[nz-icon] {
+  color: #ffffff; /* Icônes blanches au survol dans les sous-menus */
+}
+
+/* Ajustement du contenu */
 nz-content {
   margin: 0 16px;
 }
@@ -33,11 +124,45 @@ nz-breadcrumb {
 
 .inner-content {
   padding: 24px;
-  background: #fff;
+  background: #605e5e;
   min-height: 360px;
 }
 
+/* Style du pied de page */
 nz-footer {
   text-align: center;
 }
 
+/**********************************************/
+
+.inner-content {
+  text-align: center; /* Centre le texte dans le conteneur */
+}
+.revendeur-title {
+
+}
+
+.printi {
+  font-weight: bold; /* Met le mot en gras */
+  color: #ffd500; /* Change la couleur du texte */
+  font-size: 1.2em; /* Augmente la taille du texte */
+  text-transform: uppercase; /* Transforme le texte en majuscules (optionnel) */
+}
+
+.a1{
+  color: #ffd500; /* Change la couleur du texte */
+  font-size: 1em; /* Augmente la taille du texte */
+  text-transform: uppercase; /* Transforme le texte en majuscules (optionnel) */
+  margin: 0; /* Supprime les marges par défaut */
+}
+
+
+.carousel-item img {
+  width: 100%; /* Assurez-vous que les images prennent toute la largeur */
+  height: 550px; /* Maintenez le ratio de l'image */
+  display: block; /* Évite l'espace blanc sous l'image */
+}
+
+body {
+  overflow-x: hidden; /* Cache les débordements horizontaux */
+}

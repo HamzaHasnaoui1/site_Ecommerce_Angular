@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import {NzBreadCrumbComponent, NzBreadCrumbItemComponent} from "ng-zorro-antd/breadcrumb";
+import {NzCarouselComponent} from "ng-zorro-antd/carousel";
 
 registerLocaleData(en);
 
@@ -41,7 +43,10 @@ registerLocaleData(en);
     NzButtonModule,
     NzIconModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    NzBreadCrumbComponent,
+    NzBreadCrumbItemComponent,
+    NzCarouselComponent,
   ],
   providers: [
     { provide: NZ_I18N, useValue: en_US }

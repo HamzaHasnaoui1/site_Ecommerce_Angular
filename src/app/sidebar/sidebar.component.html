@@ -1,22 +1,23 @@
-<nz-layout>
+<nz-layout xmlns="http://www.w3.org/1999/html">
   <nz-sider [nzCollapsible]="true" [(nzCollapsed)]="isCollapsed" nzWidth="280px">
     <div class="logo">
       <span nz-icon nzType="menu" nzTheme="outline"></span>
       <span *ngIf="!isCollapsed">Nos Categories</span> <!-- Affiche le texte uniquement si le sider n'est pas réduit -->
     </div>
-      <ul nz-menu nzTheme="dark" nzMode="inline">
-        <li nz-menu-item>
-          <span nz-icon nzType="skin" ></span>
-          <span>Textile</span>
-        </li>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
       <li nz-menu-item>
-        <span nz-icon nzType="gift" ></span>
+        <span nz-icon nzType="skin"></span>
+        <span>Textile</span>
+      </li>
+      <li nz-menu-item>
+        <span nz-icon nzType="gift"></span>
         <span>Gifts & K'DO</span>
       </li>
       <li nz-menu-item>
         <span nz-icon nzType="desktop"></span>
         <span>Support Promotionnel</span>
       </li>
+
       <li nz-submenu nzTitle="Objets Publicitaires" nzIcon="user">
         <ul>
           <li nz-menu-item>
@@ -36,11 +37,11 @@
             Maison & Deco
           </li>
           <li nz-menu-item>
-            <span nz-icon nzType="paw"></span>
+            <span nz-icon nzType="heart"></span>
             Pets Print
           </li>
           <li nz-menu-item>
-            <span nz-icon nzType="child"></span>
+            <span nz-icon nzType="smile"></span>
             Kids Print
           </li>
           <li nz-menu-item>
@@ -52,24 +53,56 @@
 
       <li nz-submenu nzTitle="Impression" nzIcon="container">
         <ul>
-          <li nz-menu-item>
+          <li nz-menu-item [routerLink]="['/impression/image']">
             <span nz-icon nzType="camera"></span>
             Impression Photo
           </li>
-          <li nz-menu-item>
+          <li nz-menu-item [routerLink]="['/impression/grandFormat']">
             <span nz-icon nzType="appstore"></span>
             Impression Grand Format
           </li>
-          <li nz-menu-item>
+          <li nz-menu-item [routerLink]="['/impression/petitFormat']">
             <span nz-icon nzType="file-text"></span>
             Impression Petit Format
           </li>
         </ul>
       </li>
     </ul>
-
   </nz-sider>
   <nz-layout>
+    <nz-content>
+      <nz-breadcrumb>
+       <!-- <nz-breadcrumb-item>User</nz-breadcrumb-item>
+        <nz-breadcrumb-item>Bill</nz-breadcrumb-item>-->
+      </nz-breadcrumb>
+      <div  style="padding: 0;" id="carousel-div-content">
+        <div class="px-wide animate__animated animate__bounceInRight">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="width: 100%;">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <a href="https://wa.me/+2126">
+                  <img src="https://toutprint.ma/public/uploads/mac iphone1703776595.png" class="d-block w-100" id="image_slide1" alt="...">
+                </a>
+              </div>
+              <div class="carousel-item active">
+                <a href="https://wa.me/+2126">
+                  <img src="https://toutprint.ma/public/uploads/lb copie (1)1703783838.jpg" class="d-block w-100" id="image_slide2" alt="...">
+                </a>
+              </div>
+            </div>
 
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nz-content>
+    <nz-footer> ©2024 </nz-footer>
   </nz-layout>
 </nz-layout>

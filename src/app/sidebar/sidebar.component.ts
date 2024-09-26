@@ -6,10 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-  isCollapsed = false; // Variable pour suivre l'état du sider
+  isCollapsed = true;
 
 
-  toggleCollapse() {
-    this.isCollapsed = !this.isCollapsed;
-  }
+
 }
